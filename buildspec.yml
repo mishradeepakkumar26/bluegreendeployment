@@ -3,8 +3,8 @@ phases:
   install:
     commands:
       - echo "Welcome to Technical Cloud Knowledge"
-      - sudo apt-get update
-      - sudo apt-get install nginx -y
+      - sudo yum update
+      - sudo yum install httpd -y
   build:
     commands:
      - echo Build started on `date`
@@ -12,7 +12,3 @@ phases:
   post_build:
     commands:
       - echo Configuration NGINX
-artifacts:
-  files:
-   - /var/www/html/index.html
-   
