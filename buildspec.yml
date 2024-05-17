@@ -5,6 +5,7 @@ phases:
       - echo "Welcome to Technical Cloud Knowledge"
       - sudo apt update -y
       - sudo apt --fix-broken install
+      - sudo apt upgrade
       - sudo apt install httpd -y
   build:
     commands:
