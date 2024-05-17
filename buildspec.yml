@@ -4,7 +4,7 @@ phases:
     commands:
       - echo "Welcome to Technical Cloud Knowledge"
       - sudo apt update -y
-      - sudo yum install httpd -y
+      - sudo apt install httpd -y
   build:
     commands:
      - echo Build started on `date`
