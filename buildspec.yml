@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - echo "Welcome to Technical Cloud Knowledge"
-      - sudo yum update -y
+      - sudo apt update -y
       - sudo yum install httpd -y
   build:
     commands:
