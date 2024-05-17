@@ -1,16 +1,14 @@
 version: 0.2
+
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
-      - echo "Welcome to Technical Cloud Knowledge"
-      - sudo apt update -y
-      - sudo apt --fix-broken install
-      - sudo apt upgrade
-      - sudo apt install httpd -y
+      - npm install
   build:
     commands:
-     - echo Build started on `date`
-     - cp index.html /var/www/html/
+      - npm run build
   post_build:
     commands:
-      - echo Configuration NGINX
+      - npm test
